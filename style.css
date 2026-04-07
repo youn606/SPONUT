@@ -1,3 +1,24 @@
+*,*::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --green-light: #00f5a0;
+    --green-dark: #00c98a;
+    --teal: #00b4d8;
+    --bg: #0a0f0d;
+    --card: rgba(255,255,255,0.06);
+    --border: rgba(255,255,255,0.10);
+    --text: #e8fff5;
+    --muted: rgba(232,255,245,0.45);
+    --radius: 18px;
+}
+
 body {
-    color: red;
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    min-height: 100vh;
+    color: var(--text);
+    overflow-x: hidden;
 }
