@@ -1,17 +1,20 @@
-*,*::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 :root {
     --green-light: #00f5a0;
     --green-dark: #00c98a;
     --teal: #00b4d8;
     --bg: #0a0f0d;
-    --card: rgba(255,255,255,0.06);
-    --border: rgba(255,255,255,0.10);
+    --card: rgba(255, 255, 255, 0.06);
+    --border: rgba(255, 255, 255, 0.10);
     --text: #e8fff5;
-    --muted: rgba(232,255,245,0.45);
+    --muted: rgba(232, 255, 245, 0.45);
     --radius: 18px;
 }
 
@@ -31,10 +34,11 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 16px 20px;
-    background: rgba(10,15,13,0.85);
+    background: rgba(10, 15, 13, 0.85);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
 }
+
 .logo {
     font-family: 'Syne', sans-serif;
     font-size: 24px;
@@ -45,40 +49,48 @@ body {
     background-clip: var(--text);
     letter-spacing: -1px;
 }
-.menu-wrap{
+
+.menu-wrap {
     position: relative;
 }
 
-.menu-btn{
-    width: 40px; height: 40px;
+.menu-btn {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: var(--card);
     border: 1px solid var(--border);
-    display: flex; align-items: center; justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
     font-size: 18px;
     color: var(--text);
     transition: background 0.2s;
     user-select: none;
 }
-.menu-btn:hover {background: rgba(255,255,255,0.12);}
+
+.menu-btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+}
 
 .dropdown {
     position: absolute;
     top: calc(100% +10px);
-    right:0;
+    right: 0;
     width: 190px;
     background: #111a15;
     border: 1px solid var(--border);
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
     opacity: 0;
     transform: translateY(-8px) scale(0.97);
     pointer-events: none;
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
-.dropdown.open{
+
+.dropdown.open {
     opacity: 1;
     transform: translateY(0) scale(1);
     pointer-events: all;
@@ -95,6 +107,15 @@ body {
     transition: background 0.15s;
     border-bottom: 1px solid var(--border);
 }
-.dropdown-item:last-child { border-bottom: none;}
-.dropdown-item:hover { background: rgba(255,255,255,0.06);}
-.dropdown-item.danger   { color: #ff7878;}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.dropdown-item.danger {
+    color: #ff7878;
+}
