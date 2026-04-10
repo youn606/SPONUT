@@ -44,9 +44,9 @@ body {
     font-size: 24px;
     font-weight: 800;
     background: linear-gradient(135deg, var(--green-light), var(--teal));
-    -webkit-background-clip: text;
+    -webkit-background-clip: var(--text);
     -webkit-text-fill-color: transparent;
-    background-clip: text;
+    background-clip: var(--text);
     letter-spacing: -1px;
 }
 
@@ -76,7 +76,7 @@ body {
 
 .dropdown {
     position: absolute;
-    top: calc(100% + 10px);
+    top: calc(100% +10px);
     right: 0;
     width: 190px;
     background: #111a15;
