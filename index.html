@@ -4,102 +4,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Sponut</title>
+    <title>SPONUT</title>
 </head>
 
 <body>
+
     <header class="app-header">
         <div class="logo">SPONUT</div>
-
         <div class="menu-wrap" id="menuWrap">
-            <div class="menu-btn" id="menuBtn">...</div>
+            <div class="menu-btn" id="menuBtn">⋯</div>
             <div class="dropdown" id="dropdown">
-                <div class="dropdown-item"> Accueil</div>
-                <div class="dropdown-item"> Mes Repas</div>
+                <div class="dropdown-item">Accueil</div>
+                <div class="dropdown-item">Mes repas</div>
+                <div class="dropdown-item">Statistiques</div>
+                <div class="dropdown-item">Paramètres</div>
+                <div class="dropdown-item danger">Déconnexion</div>
             </div>
         </div>
     </header>
-    <main class="content">
-        <div class="profil">...</div>
-        <div class="nutrition">...</div>
-        <div class="semaine">...</div>
-    </main>
 
-    <div class="macros">
-        <div class="macro-card">
-            <div class="macro-icon cal"> emoji feu</div>
-            <div class="macro-body">
-                <div class="macro-top">
-                    <div class="macro-label">Calories</div>
-                    <div class="macro-value"><span>1 840</span></div>
-                </div>
-                <div class="macro-bar-wrap">
-                    <div class="macro-bar bar-cal"></div>
-                </div>
+    <main class="content">
+
+        <div class="profile-section">
+            <div class="avatar-wrap">
+                <div class="avatar">🧑</div>
+                <div class="avatar-ring"></div>
             </div>
+            <div class="profile-info">
+                <div class="profile-name">Alexandre</div>
+                <div class="profile-sub">Suivi journalier · Aujourd'hui</div>
+            </div>
+            <div class="profile-badge">Actif</div>
         </div>
 
-        <div class="macro-card">
-            <div class="macro-icon prot">emoji muscle</div>
-            <div class="macro-body">
-                <div class="macro-top">
-                    <div class="macro-label">Protéines</div>
-                    <div class="macro-value"><span>122</span>
+        <div class="section-title">Nutrition du jour</div>
+        <div class="macros">
+
+            <div class="macro-card">
+                <div class="macro-icon cal">🔥</div>
+                <div class="macro-body">
+                    <div class="macro-top">
+                        <div class="macro-label">Calories</div>
+                        <div class="macro-value"><span>1 840</span> / 2 200 kcal</div>
+                    </div>
+                    <div class="macro-bar-wrap">
+                        <div class="macro-bar bar-cal"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="macro-card">
+                <div class="macro-icon prot">💪</div>
+                <div class="macro-body">
+                    <div class="macro-top">
+                        <div class="macro-label">Protéines</div>
+                        <div class="macro-value"><span>122</span> / 160 g</div>
                     </div>
                     <div class="macro-bar-wrap">
                         <div class="macro-bar bar-prot"></div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="macro-card">
-            <div class="macro-icon gluc">emoji blé </div>
-            <div class="macro-body">
-                <div class="macro-top">
+
+            <div class="macro-card">
+                <div class="macro-icon gluc">🌾</div>
+                <div class="macro-body">
+                    <div class="macro-top">
+                        <div class="macro-label">Glucides</div>
+                        <div class="macro-value"><span>198</span> / 240 g</div>
+                    </div>
                     <div class="macro-bar-wrap">
                         <div class="macro-bar bar-gluc"></div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="macro-card">
-            <div class="macro-icon lip">emoji avocat</div>
-            <div class="macro-body">
-                <div class="macro-top">
-                    <div class="macro-label">Lipides</div>
-                    <div class="macro-value">
+
+            <div class="macro-card">
+                <div class="macro-icon lip">🥑</div>
+                <div class="macro-body">
+                    <div class="macro-top">
+                        <div class="macro-label">Lipides</div>
+                        <div class="macro-value"><span>48</span> / 70 g</div>
+                    </div>
+                    <div class="macro-bar-wrap">
                         <div class="macro-bar bar-lip"></div>
                     </div>
                 </div>
             </div>
+
         </div>
 
         <div class="week-section">
             <div class="section-title">Cette semaine</div>
             <div class="week-grid">
                 <div class="day-card done">
-                    <div class="day-label>">Lundi</div>
-                    <div class="day-dot"></div></div>
-                                    <div class="day-card done">
-                    <div class="day-label>">Mardi</div>
-                    <div class="day-dot"></div></div>
-                                    <div class="day-card done">
-                    <div class="day-label>">Mercredi</div>
-                    <div class="day-dot"></div></div>
-                                    <div class="day-card done">
-                    <div class="day-label>">Jeudi</div>
-                    <div class="day-dot"></div></div>
-                                    <div class="day-card done">
-                    <div class="day-label>">Vendredi</div>
-                    <div class="day-dot"></div></div>
-                                    <div class="day-card done">
-                    <div class="day-label>">Samedi</div>
-                    <div class="day-dot"></div></div>
-                                    <div class="day-card done">
-                    <div class="day-label>">Dimanche</div>
-                    <div class="day-dot"></div></div>
+                    <div class="day-label">Lun</div>
+                    <div class="day-dot"></div>
+                </div>
+                <div class="day-card done">
+                    <div class="day-label">Mar</div>
+                    <div class="day-dot"></div>
+                </div>
+                <div class="day-card done">
+                    <div class="day-label">Mer</div>
+                    <div class="day-dot"></div>
+                </div>
+                <div class="day-card done">
+                    <div class="day-label">Jeu</div>
+                    <div class="day-dot"></div>
+                </div>
+                <div class="day-card active">
+                    <div class="day-label">Ven</div>
+                    <div class="day-dot"></div>
+                </div>
+                <div class="day-card">
+                    <div class="day-label">Sam</div>
+                    <div class="day-dot"></div>
+                </div>
+                <div class="day-card">
+                    <div class="day-label">Dim</div>
+                    <div class="day-dot"></div>
+                </div>
             </div>
+        </div>
+
+    </main>
+
     <script src="script.js"></script>
 </body>
 
