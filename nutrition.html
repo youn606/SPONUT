@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nutrition.css">
+
+    <title>SPONUT — Nutrition</title>
+</head>
+
+<body>
+
+<header class="app-header">
+    <a href="index.html" class="logo">SPONUT</a>
+
+    <div class="menu-wrap">
+        <div class="menu-btn">⋯</div>
+
+        <div class="dropdown">
+            <a class="dropdown-item" href="index.html">Accueil</a>
+            <a class="dropdown-item" href="entrainement.html">Entraînement</a>
+            <a class="dropdown-item" href="nutrition.html">Nutrition</a>
+            <a class="dropdown-item" href="profil.html">Profil</a>
+            <a class="dropdown-item danger" href="#">Déconnexion</a>
+        </div>
+    </div>
+</header>
+
+<main class="content">
+
+    <div class="page-hero">
+        <div class="page-hero-icon">🥗</div>
+        <div>
+            <div class="page-title">Nutrition</div>
+            <div class="page-sub">Suivi alimentaire quotidien</div>
+        </div>
+    </div>
+
+    <div class="section-title">Rechercher un aliment</div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Ex : riz, poulet, pomme...">
+    </div>
+
+    <div class="section-title">Résultats</div>
+
+    <div class="exercices">
+
+        <div class="exo-card">
+            <div class="exo-visual">🍗</div>
+            <div class="exo-body">
+                <div class="exo-name">Poulet</div>
+                <div class="exo-desc">Riche en protéines, idéal pour la musculation.</div>
+                <div class="exo-tags">
+                    <span class="tag">165 kcal</span>
+                    <span class="tag">31g protéines</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="exo-card">
+            <div class="exo-visual">🍚</div>
+            <div class="exo-body">
+                <div class="exo-name">Riz</div>
+                <div class="exo-desc">Source d’énergie rapide.</div>
+                <div class="exo-tags">
+                    <span class="tag">130 kcal</span>
+                    <span class="tag">Glucides</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>
