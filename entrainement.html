@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="entrainement.css">
+    <title>SPONUT — Entraînement</title>
+</head>
+
+<body>
+
+    <header class="app-header">
+        <a href="index.html" class="logo">SPONUT</a>
+        <div class="menu-wrap" id="menuWrap">
+            <div class="menu-btn" id="menuBtn">⋯</div>
+            <div class="dropdown" id="dropdown">
+                <div class="dropdown-item" onclick="window.location='index.html'">Accueil</div>
+                <div class="dropdown-item" onclick="window.location='entrainement.html'">Entraînement</div>
+                <div class="dropdown-item" onclick="window.location='nutrition.html'">Nutrition</div>
+                <div class="dropdown-item" onclick="window.location='profil.html'">Profil</div>
+                <div class="dropdown-item danger">Déconnexion</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+
+        <div class="page-hero">
+            <div class="page-hero-icon">🏋️</div>
+            <div>
+                <div class="page-title">Entraînement</div>
+                <div class="page-sub">Programme débutant · 5 jours</div>
+            </div>
+        </div>
+
+        <div class="section-title">Programme de la semaine</div>
+        <div class="week-program">
+            <div class="program-day active">
+                <div class="pd-label">Lun</div>
+                <div class="pd-type">💪 Haut</div>
+            </div>
+            <div class="program-day">
+                <div class="pd-label">Mar</div>
+                <div class="pd-type">🏃 Cardio</div>
+            </div>
+            <div class="program-day">
+                <div class="pd-label">Mer</div>
+                <div class="pd-type">🦵 Bas</div>
+            </div>
+            <div class="program-day rest">
+                <div class="pd-label">Jeu</div>
+                <div class="pd-type">😴 Repos</div>
+            </div>
+            <div class="program-day">
+                <div class="pd-label">Ven</div>
+                <div class="pd-type">💪 Full</div>
+            </div>
+            <div class="program-day">
+                <div class="pd-label">Sam</div>
+                <div class="pd-type">🏃 Cardio</div>
+            </div>
+            <div class="program-day rest">
+                <div class="pd-label">Dim</div>
+                <div class="pd-type">😴 Repos</div>
+            </div>
+        </div>
+
+        <div class="section-title">💪 Haut du corps</div>
+        <div class="exercices">
+
+            <div class="exo-card">
+                <div class="exo-visual">🤸</div>
+                <div class="exo-body">
+                    <div class="exo-name">Pompes</div>
+                    <div class="exo-desc">Allonge-toi face au sol, mains à largeur d'épaules. Monte et descends en gardant le dos droit.</div>
+                    <div class="exo-tags">
+                        <span class="tag">3 séries</span>
+                        <span class="tag">10 reps</span>
+                        <span class="tag difficulty easy">Débutant</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exo-card">
+                <div class="exo-visual">🏋️</div>
+                <div class="exo-body">
+                    <div class="exo-name">Dips sur chaise</div>
+                    <div class="exo-desc">Mains sur le bord d'une chaise, dos droit. Fléchis les coudes pour descendre puis remonte.</div>
+                    <div class="exo-tags">
+                        <span class="tag">3 séries</span>
+                        <span class="tag">12 reps</span>
+                        <span class="tag difficulty easy">Débutant</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exo-card">
+                <div class="exo-visual">🙆</div>
+                <div class="exo-body">
+                    <div class="exo-name">Élévations latérales</div>
+                    <div class="exo-desc">Debout, bras le long du corps. Lève les bras sur les côtés jusqu'à hauteur des épaules.</div>
+                    <div class="exo-tags">
+                        <span class="tag">3 séries</span>
+                        <span class="tag">15 reps</span>
+                        <span class="tag difficulty easy">Débutant</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section-title">🦵 Bas du corps</div>
+        <div class="exercices">
+
+            <div class="exo-card">
+                <div class="exo-visual">🧎</div>
+                <div class="exo-body">
+                    <div class="exo-name">Squats</div>
+                    <div class="exo-desc">Pieds à largeur d'épaules, descends comme si tu allais t'asseoir sur une chaise. Dos droit, genoux dans l'axe des pieds.</div>
+                    <div class="exo-tags">
+                        <span class="tag">4 séries</span>
+                        <span class="tag">15 reps</span>
+                        <span class="tag difficulty easy">Débutant</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exo-card">
+                <div class="exo-visual">🚶</div>
+                <div class="exo-body">
+                    <div class="exo-name">Fentes</div>
+                    <div class="exo-desc">Avance un pied, descends le genou arrière vers le sol, remonte. Alterne les jambes.</div>
+                    <div class="exo-tags">
+                        <span class="tag">3 séries</span>
+                        <span class="tag">10 reps</span>
+                        <span class="tag difficulty easy">Débutant</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exo-card">
+                <div class="exo-visual">🦶</div>
+                <div class="exo-body">
+                    <div class="exo-name">Mollets debout</div>
+                    <div class="exo-desc">Debout, monte sur la pointe des pieds le plus haut possible, descends lentement.</div>
+                    <div class="exo-tags">
+                        <span class="tag">3 séries</span>
+                        <span class="tag">20 reps</span>
+                        <span class="tag difficulty easy">Débutant</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section-title">🏃 Cardio</div>
+        <div class="exercices">
+
+            <div class="exo-card">
+                <div class="exo-visual">⭐</div>
+                <div class="exo-body">
+                    <div class="exo-name">Jumping Jacks</div>
+                    <div class="exo-desc">Saute en écartant les jambes et en levant les bras au-dessus de la tête, puis reviens à la position initiale.</div>
+                    <div class="exo-tags">
+                        <span class="tag">3 séries</span>
+                        <span class="tag">30 sec</span>
+                        <span class="tag difficulty easy">Débutant</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exo-card">
+                <div class="exo-visual">🏃</div>
+                <div class="exo-body">
+                    <div class="exo-name">Montées de genoux</div>
+                    <div class="exo-desc">Sur place, monte les genoux alternativement le plus haut possible, bras qui bougent comme en course.</div>
+                    <div class="exo-tags">
+                        <span class="tag">3 séries</span>
+                        <span class="tag">30 sec</span>
+                        <span class="tag difficulty easy">Débutant</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exo-card">
+                <div class="exo-visual">🪲</div>
+                <div class="exo-body">
+                    <div class="exo-name">Burpees</div>
+                    <div class="exo-desc">Descends en position pompe, fais une pompe, ramène les pieds, saute en levant les bras. Enchaîne.</div>
+                    <div class="exo-tags">
+                        <span class="tag">3 séries</span>
+                        <span class="tag">8 reps</span>
+                        <span class="tag difficulty medium">Intermédiaire</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section-title">🧘 Gainage</div>
+        <div class="exercices">
+
+            <div class="exo-card">
+                <div class="exo-visual">➖</div>
+                <div class="exo-body">
+                    <div class="exo-name">Planche</div>
+                    <div class="exo-desc">Sur les avant-bras et les orteils, corps aligné. Contracte le ventre et tiens la position.</div>
+                    <div class="exo-tags">
+                        <span class="tag">3 séries</span>
+                        <span class="tag">30 sec</span>
+                        <span class="tag difficulty easy">Débutant</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exo-card">
+                <div class="exo-visual">🚴</div>
+                <div class="exo-body">
+                    <div class="exo-name">Crunchs vélo</div>
+                    <div class="exo-desc">Allongé, mains derrière la tête. Amène le coude droit vers le genou gauche en alternant.</div>
+                    <div class="exo-tags">
+                        <span class="tag">3 séries</span>
+                        <span class="tag">20 reps</span>
+                        <span class="tag difficulty easy">Débutant</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
