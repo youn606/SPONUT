@@ -18,17 +18,16 @@
 <header class="app-header">
     <a href="index.html" class="logo">SPONUT</a>
 
-    <div class="menu-wrap">
-        <div class="menu-btn">⋯</div>
-
-        <div class="dropdown">
-            <a class="dropdown-item" href="index.html">Accueil</a>
-            <a class="dropdown-item" href="entrainement.html">Entraînement</a>
-            <a class="dropdown-item" href="nutrition.html">Nutrition</a>
-            <a class="dropdown-item" href="profil.html">Profil</a>
-            <a class="dropdown-item danger" href="#">Déconnexion</a>
+        <div class="menu-wrap" id="menuWrap">
+            <div class="menu-btn" id="menuBtn">⋯</div>
+            <div class="dropdown" id="dropdown">
+                <div class="dropdown-item" onclick="window.location='index.html'">Accueil</div>
+                <div class="dropdown-item" onclick="window.location='entrainement.html'">Entraînement</div>
+                <div class="dropdown-item" onclick="window.location='nutrition.html'">Nutrition</div>
+                <div class="dropdown-item" onclick="window.location='profil.html'">Profil</div>
+                <div class="dropdown-item danger">Déconnexion</div>
+            </div>
         </div>
-    </div>
 </header>
 
 <main class="content">
@@ -78,6 +77,8 @@
     </div>
 
 </main>
+
+      <script src="script.js"></script>
 
 </body>
 </html>
