@@ -41,7 +41,9 @@ function displayResults(results) {
                 <div class="exo-visual">🍎</div>
                 <div class="exo-body">
                     <div class="exo-name">${item.name}</div>
-                    <div class="exo-desc">Donnée récupérée via API</div>
+                    <div class="exo-desc">
+                        Donnée récupérée via API
+                    </div>
                 </div>
             </div>
         `;

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>SPONUT - Profil</title>
+</head>
+
+<body>
+
+    <header class="app-header">
+        <div class="logo">SPONUT</div>
+
+        <div class="menu-wrap">
+            <div class="menu-btn" id="menuBtn">⋯</div>
+
+            <div class="dropdown" id="dropdown">
+                <div class="dropdown-item" onclick="window.location='index.html'">Accueil</div>
+                <div class="dropdown-item" onclick="window.location='entrainement.html'">Entraînement</div>
+                <div class="dropdown-item" onclick="window.location='nutrition.html'">Nutrition</div>
+                <div class="dropdown-item" onclick="window.location='profil.html'">Profil</div>
+                <div class="dropdown-item danger">Déconnexion</div>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+
+        <div class="profile-card">
+            <div class="avatar-wrap">
+                <div class="avatar">🧑</div>
+                <div class="avatar-ring"></div>
+            </div>
+            <h2>Alexandre</h2>
+            <p class="muted">Membre depuis 2024</p>
+            <button class="btn">Modifier le profil</button>
+        </div>
+
+        <div class="card">
+            <div class="section-title">Informations</div>
+            <div class="info-line">Âge : <span>21 ans</span></div>
+            <div class="info-line">Poids : <span>75 kg</span></div>
+            <div class="info-line">Taille : <span>1m80</span></div>
+        </div>
+
+        <div class="card">
+            <div class="section-title">Objectifs</div>
+            <div class="info-line">Objectif : <span>Prise de masse</span></div>
+            <div class="info-line">Calories/jour : <span>2200 kcal</span></div>
+        </div>
+
+        <div class="card">
+            <div class="section-title">Statistiques</div>
+            <div class="info-line">Séances cette semaine : <span>4</span></div>
+            <div class="info-line">Calories moyennes : <span>1850</span></div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
