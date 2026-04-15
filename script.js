@@ -20,25 +20,15 @@ dayCards.forEach(function(card) {
         card.classList.add('active')
     })
 })
-const API_KEY = "TA_CLE_API_ICI"; // Spoonacular
-
 async function searchFood() {
     const query = document.getElementById("searchInput").value;
 
     if (!query) return;
 
-    try {
-        const response = await fetch(
-            `https://api.spoonacular.com/food/ingredients/search?query=${query}&apiKey=${API_KEY}`
-        );
+    const res = await fetch("http://localhost:3000/api/food?q=" + query);
+    const data = await res.json();
 
-        const data = await response.json();
-
-        displayResults(data.results);
-
-    } catch (error) {
-        console.error("Erreur API :", error);
-    }
+    displayResults(data.results || []);
 }
 
 function displayResults(results) {
@@ -51,7 +41,7 @@ function displayResults(results) {
                 <div class="exo-visual">🍎</div>
                 <div class="exo-body">
                     <div class="exo-name">${item.name}</div>
-                    <div class="exo-desc">Aliment trouvé via API nutrition</div>
+                    <div class="exo-desc">Donnée récupérée via API</div>
                 </div>
             </div>
         `;
